@@ -1,1 +1,11 @@
-<p>navegation works!</p>
+<nav class="nav">
+    <div class="logo">
+        <img [src]="logoPath" alt="Minha Logo">
+    </div>
+    <div class="nav-items">
+        <span class="item" *ngFor="let item of menuItems" [ngClass]="{ 'active': item.active }"
+            (click)="setActiveItem(item)">
+            {{ item.label }}
+        </span>
+    </div>
+</nav>

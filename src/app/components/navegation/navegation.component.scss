@@ -1,0 +1,37 @@
+.nav {
+    height: 6rem;
+    width: 100%;
+    background-color: #040504;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 15rem;
+
+    .logo {
+        height: 100%;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .nav-items {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+
+        .active {
+            color: #daa520;
+        }
+
+        .item {
+            cursor: pointer;
+        }
+
+        .item:hover {
+            text-decoration: underline;
+            text-decoration-color: #daa520;
+        }
+    }
+}
