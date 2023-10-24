@@ -1,0 +1,67 @@
+.headline {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    padding: 0.5rem 15rem;
+
+    .image-div {
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    .headline-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .title {
+
+
+            .wellcome {
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: 500;
+                font-size: 5rem;
+            }
+        }
+
+        .sub-title {
+            display: flex;
+            flex-direction: row;
+            gap: 0.5rem;
+            height: 3rem;
+            line-height: 3rem;
+            font-size: 3rem;
+
+            .text-changer {
+                display: flex;
+                flex-direction: column;
+                height: 3rem;
+                line-height: 3rem;
+                overflow: hidden;
+
+                .text {
+                    animation: slide-up 14s infinite;
+                    font-weight: 600;
+                    -webkit-text-fill-color: transparent;
+                    background: linear-gradient(20deg, cyan, magenta);
+                    -webkit-background-clip: text;
+                }
+
+                @keyframes slide-up {
+                   0%, 10% {
+                    transform: translateY(0%);
+                } 
+                   15%, 25% {
+                    transform: translateY(-100%);
+                   } 
+                   30%, 40% {
+                    transform: translateY(-200%);
+                   } 
+                }
+            }
+        }
+    }
+}

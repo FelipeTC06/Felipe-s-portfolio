@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-headline',
@@ -9,5 +10,18 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./headline.component.scss']
 })
 export class HeadlineComponent {
+  
+  public myImage!: SafeResourceUrl;
+  public currentText: string = 'Felipe Torres Cresto';
+
+  constructor(private sanitizer: DomSanitizer, private renderer: Renderer2) { }
+
+  public ngOnInit() {
+    this.loadImage();
+  }
+
+  private loadImage() {
+    this.myImage = this.sanitizer.bypassSecurityTrustResourceUrl('./assets/images/image-perfil.png');
+  }
 
 }
