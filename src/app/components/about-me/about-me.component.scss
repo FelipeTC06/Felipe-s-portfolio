@@ -1,12 +1,205 @@
 .about-me {
+    background-color: #14191c;
+    height: fit-content;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+
 
 
     .image-div {
 
         img {
-            border-radius: 50%;
-            height: 15rem;
-            width: 15rem;
+            border-radius: 18%;
+            height: 25rem;
+            width: 25rem;
         }
+    }
+
+    .about-text {
+        max-width: 45rem;
+        min-width: 30rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1rem;
+
+        .text-more {
+            .text {
+                font-size: 1rem;
+            }
+
+            .continue {
+                display: none;
+                font-size: 0.7rem;
+                cursor: pointer;
+            }
+        }
+
+
+
+        .contact {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+
+            .mail {
+                background: transparent;
+                padding: 0;
+                border: none;
+            }
+
+            .download-cv {
+                font-size: 0.7rem;
+                border: 1px solid #fff;
+                border-radius: 1rem;
+                background: transparent;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .about-me {
+        gap: 2rem;
+
+
+        .image-div {
+
+            img {
+                height: 20rem;
+                width: 20rem;
+            }
+        }
+
+        .about-text {
+
+
+            .text-more {
+                .text {}
+
+                .continue {}
+            }
+
+            .contact {
+
+                .download-cv {}
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .about-me {
+        flex-direction: column;
+        gap: 2rem;
+
+
+        .image-div {
+
+            img {
+                height: 25rem;
+                width: 25rem;
+            }
+        }
+
+        .about-text {
+            max-width: 50rem;
+
+            .text-more {
+                .text {}
+
+                .continue {}
+            }
+
+            .contact {
+
+                .download-cv {}
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .about-me {
+        flex-direction: column;
+        gap: 2rem;
+
+
+        .image-div {
+
+            img {
+                height: 18rem;
+                width: 18rem;
+            }
+        }
+
+        .about-text {
+            max-width: 50rem;
+            min-width: fit-content;
+
+            .text-more {
+                .text {}
+
+                .continue {}
+            }
+
+            .contact {
+
+                .download-cv {}
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about-me {
+
+
+
+        .image-div {
+
+            img {}
+        }
+
+        .about-text {
+
+            .text-more {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .text {
+                    max-height: 15rem;
+                    overflow: hidden;
+                }
+
+                .read-more {
+                    max-height: fit-content;
+                }
+
+                .continue {
+                    display: block;
+                    text-decoration: underline;
+                }
+            }
+
+
+
+            .contact {
+
+                .download-cv {}
+            }
+        }
+
     }
 }

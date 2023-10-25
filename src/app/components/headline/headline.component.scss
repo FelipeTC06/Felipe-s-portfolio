@@ -65,6 +65,10 @@
                     40% {
                         transform: translateY(-200%);
                     }
+                    45%,
+                    55% {
+                        transform: translateY(-300%);
+                    }
                 }
             }
         }
