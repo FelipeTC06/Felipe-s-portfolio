@@ -1,1 +1,18 @@
-<p>skills works!</p>
+<div class="board-skills">
+    <div class="software-skills align-list">
+        <h2 class="title">Software Skills</h2>
+        <div class="skills-items align-items">
+            <span *ngFor="let skill of softWareSkills" class="items">
+                <i [ngClass]="skill.icon"></i>{{ skill.name }}
+            </span>
+        </div>
+    </div>
+    <div class="languages align-list">
+        <h2 class="title">Languages</h2>
+        <div class="languages-items align-items">
+            <span *ngFor="let language of languages" class="items">
+                {{ language.name }}
+            </span>
+        </div>
+    </div>
+</div>
