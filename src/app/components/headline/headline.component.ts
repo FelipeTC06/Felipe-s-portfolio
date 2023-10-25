@@ -11,17 +11,16 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 })
 export class HeadlineComponent {
   
-  public myImage!: SafeResourceUrl;
-  public currentText: string = 'Felipe Torres Cresto';
+  public background!: SafeResourceUrl;
 
   constructor(private sanitizer: DomSanitizer, private renderer: Renderer2) { }
 
   public ngOnInit() {
-    this.loadImage();
+    this.loadBackgroundImage();
   }
 
-  private loadImage() {
-    this.myImage = this.sanitizer.bypassSecurityTrustResourceUrl('./assets/images/image-perfil.png');
+  private loadBackgroundImage() {
+    this.background = this.sanitizer.bypassSecurityTrustResourceUrl('./assets/images/headline-background.jpg');
   }
 
 }

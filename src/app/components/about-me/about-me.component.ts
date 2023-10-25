@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-about-me',
@@ -9,5 +10,15 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent {
+  public myImage!: SafeResourceUrl;
 
+  constructor(private sanitizer: DomSanitizer, private renderer: Renderer2) { }
+
+  public ngOnInit() {
+    this.loadImage();
+  }
+
+  private loadImage() {
+    this.myImage = this.sanitizer.bypassSecurityTrustResourceUrl('./assets/images/image-perfil.png');
+  }
 }
