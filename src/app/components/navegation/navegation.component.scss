@@ -3,12 +3,15 @@
     width: 100%;
     background-color: #040504;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0.5rem 15rem;
+    padding: 0.5rem 0rem;
 
     .logo {
         height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         img {
             height: 100%;
@@ -32,6 +35,83 @@
         .item:hover {
             text-decoration: underline;
             text-decoration-color: #daa520;
+        }
+    }
+
+    .open-mobile {
+        display: none;
+
+        i {
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav {
+
+
+        .logo {
+
+
+            img {
+                height: 70%;
+            }
+        }
+
+        .nav-items {
+            font-size: 0.8rem;
+
+
+            .active {}
+
+            .item {}
+
+            .item:hover {}
+        }
+
+        .open-mobile {
+
+
+            i {}
+        }
+    }
+}
+
+@media screen and (max-width: 491px) {
+    .nav {
+
+
+        .logo {
+
+
+            img {
+                height: 70%;
+            }
+        }
+
+        .open {
+            display: flex !important;
+        }
+
+        .nav-items {
+            display: none;
+
+
+            .active {}
+
+            .item {}
+
+            .item:hover {}
+        }
+
+        .open-mobile {
+            display: block;
+
+            i {
+                cursor: pointer;
+            }
         }
     }
 }

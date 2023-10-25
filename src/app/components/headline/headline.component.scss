@@ -72,66 +72,62 @@
 }
 
 
-@media screen and (max-width: 586px) {
-    .headline {    
+@media screen and (max-width: 768px) {
+    .headline {
 
-    
+
         .headline-text {
 
-    
+
             .title {
-    
-    
+
+
                 .wellcome {
                     font-size: 4rem;
                 }
             }
-    
-    
+
+
             .sub-title {
 
                 font-size: 2rem;
-    
+
                 .text-changer {
 
-    
-                    .text {
 
-                    }
-    
+                    .text {}
+
                 }
             }
         }
     }
 }
 
-@media screen and (max-width: 420px) {
-    .headline {    
+@media screen and (max-width: 425px) {
+    .headline {
+        height: 25rem;
 
-    
         .headline-text {
 
-    
+
             .title {
-    
-    
+
+
                 .wellcome {
                     font-size: 3rem;
                 }
             }
-    
-    
+
+
             .sub-title {
 
                 font-size: 1.5rem;
-    
+
                 .text-changer {
 
-    
-                    .text {
 
-                    }
-    
+                    .text {}
+
                 }
             }
         }

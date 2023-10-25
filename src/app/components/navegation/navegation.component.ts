@@ -12,8 +12,10 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 export class NavegationComponent {
 
   public logoPath!: SafeResourceUrl;
+  public isNavItemsVisible!: boolean;
+  public iconClass: string = 'bi bi-justify';
 
-  
+
   public menuItems = [
     { label: 'Home', active: true },
     { label: 'About Me', active: false },
@@ -21,9 +23,9 @@ export class NavegationComponent {
     { label: 'Skills', active: false },
     { label: 'Projects', active: false },
   ];
-  
+
   constructor(private sanitizer: DomSanitizer) { }
-  
+
   public ngOnInit() {
     this.loadLogo();
   }
@@ -37,6 +39,11 @@ export class NavegationComponent {
     this.menuItems.forEach((menuItem) => {
       menuItem.active = menuItem.label === item.label;
     });
+  }
+
+  public openMobile() {
+    this.isNavItemsVisible = !this.isNavItemsVisible;
+    this.iconClass = this.isNavItemsVisible ? 'bi bi-x-lg' : 'bi bi-justify'
   }
 
 }
