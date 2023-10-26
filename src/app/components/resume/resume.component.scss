@@ -1,0 +1,226 @@
+.resume {
+    background-color: #14191c;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+    .title {}
+
+    .edu-exp {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+
+
+        .align-all {
+            display: flex;
+            flex-direction: column;
+
+            .sub-title {
+                text-align: center;
+                font-family: 'Josefin Sans', sans-serif;
+                text-decoration: underline;
+                text-decoration-thickness: 1px;
+                text-decoration-skip: none;
+                text-underline-offset: 4px;
+            }
+
+            .align-items {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                .ali-item {
+                    display: flex;
+                    flex-direction: column;
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 30rem;
+                    padding: 1rem 2rem;
+
+                    .edu-exo-name {
+                        color: #daa520;
+                    }
+                }
+            }
+        }
+
+
+
+
+        .education {
+
+
+            .educations-items {
+
+
+                .edu-item {
+
+
+                    .edu-name {}
+
+                    .edu-description {}
+                }
+            }
+        }
+
+        .experience {
+
+
+            .experience-items {
+
+
+                .exo-item {
+
+
+                    .exo-name {}
+
+                    .exo-location {
+                        font-size: 0.8rem;
+                        color: #cbcbcb;
+                        font-weight: 600;
+                        font-family: 'Josefin Sans', sans-serif;
+                    }
+
+                    .exo-description {}
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .resume {
+
+
+        .title {}
+
+        .edu-exp {
+
+
+            .align-all {
+                width: 100%;
+
+                .sub-title {}
+
+                .align-items {
+
+
+
+                    .ali-item {
+
+
+                        .edu-exo-name {}
+                    }
+                }
+            }
+
+
+
+
+            .education {
+
+
+                .educations-items {
+
+
+                    .edu-item {
+
+
+                        .edu-name {}
+
+                        .edu-description {}
+                    }
+                }
+            }
+
+            .experience {
+
+
+                .experience-items {
+
+
+                    .exo-item {
+
+
+                        .exo-name {}
+
+                        .exo-location {}
+
+                        .exo-description {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .resume {
+
+
+        .title {}
+
+        .edu-exp {
+            flex-direction: column;
+            gap: 2rem;
+
+            .align-all {
+
+                .sub-title {}
+
+                .align-items {
+
+
+
+                    .ali-item {
+
+
+                        .edu-exo-name {}
+                    }
+                }
+            }
+
+
+
+
+            .education {
+
+
+                .educations-items {
+
+
+                    .edu-item {
+
+
+                        .edu-name {}
+
+                        .edu-description {}
+                    }
+                }
+            }
+
+            .experience {
+
+
+                .experience-items {
+
+
+                    .exo-item {
+
+
+                        .exo-name {}
+
+                        .exo-location {}
+
+                        .exo-description {}
+                    }
+                }
+            }
+        }
+    }
+}

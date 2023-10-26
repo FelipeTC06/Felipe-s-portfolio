@@ -1,1 +1,23 @@
-<p>resume works!</p>
+<div class="resume">
+    <div class="edu-exp">
+        <div class="education align-all">
+            <h2 class="sub-title">Education</h2>
+            <div class="educations-items align-items">
+                <div class="edu-item ali-item" *ngFor="let edu of education">
+                    <span class="edu-name edu-exo-name">{{ edu.name }}</span>
+                    <span class="edu-description edu-exo-description">{{ edu.description }}</span>
+                </div>
+            </div>
+        </div>
+        <div class="experience align-all">
+            <h2 class="sub-title">Experience</h2>
+            <div class="experience-items align-items">
+                <div class="exo-item ali-item" *ngFor="let exo of experience">
+                    <span class="exo-name edu-exo-name">{{ exo.name }}</span>
+                    <span class="exo-location exo-location">{{ exo.location }}</span>
+                    <span class="exo-description edu-exo-description">{{ exo.description }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
