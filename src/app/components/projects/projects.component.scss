@@ -62,6 +62,34 @@
     }
 }
 
+@media (max-width: 600px) {
+    .projects-all {
+
+        .title {}
+
+        .project-cards {
+
+
+            .link-a {
+
+
+                .card-project {
+
+
+
+                    .icon-align {}
+
+                    .logo-image {}
+
+                    .name {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 425px) {
     .projects-all {
         padding: 5rem 0rem;
@@ -90,9 +118,7 @@
                         height: 5rem;
                     }
 
-                    .name {
-                        font-size: 0.7rem;
-                    }
+                    .name {}
                 }
             }
         }
