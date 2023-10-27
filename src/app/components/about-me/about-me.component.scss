@@ -137,8 +137,8 @@
         .image-div {
 
             img {
-                height: 18rem;
-                width: 18rem;
+                height: 17rem;
+                width: 17rem;
             }
         }
 
@@ -161,14 +161,17 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 360px) {
     .about-me {
 
 
 
         .image-div {
 
-            img {}
+            img {
+                height: 10rem;
+                width: 10rem;
+            }
         }
 
         .about-text {

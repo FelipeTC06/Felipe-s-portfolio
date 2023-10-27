@@ -28,11 +28,11 @@
         .sub-title {
             width: 100%;
             height: 3rem;
+            line-height: 3rem;
+            font-size: 3rem;
             display: flex;
             flex-direction: row;
             gap: 0.5rem;
-            line-height: 3rem;
-            font-size: 3rem;
 
             .text-changer {
                 display: flex;
@@ -42,6 +42,7 @@
                 overflow: hidden;
 
                 .text {
+                    font-size: 3rem;
                     animation: slide-up 14s infinite;
                     font-weight: 600;
                     -webkit-text-fill-color: transparent;
@@ -93,13 +94,17 @@
 
 
             .sub-title {
-
+                height: 2rem;
+                line-height: 2rem;
                 font-size: 2rem;
 
                 .text-changer {
+                    line-height: 2rem;
+                    font-size: 2rem;
 
-
-                    .text {}
+                    .text {
+                        font-size: 2rem;
+                    }
 
                 }
             }
@@ -109,7 +114,7 @@
 
 @media screen and (max-width: 425px) {
     .headline {
-        height: 25rem;
+        height: 20rem;
 
         .headline-text {
 
@@ -118,19 +123,28 @@
 
 
                 .wellcome {
-                    font-size: 3rem;
+                    font-size: 2.8rem;;
                 }
             }
 
 
             .sub-title {
-
+                height: 100%;
+                line-height: 1.5rem;
                 font-size: 1.5rem;
+                flex-direction: column;
+                align-items: center;
+
 
                 .text-changer {
+                    height: 1.5rem;
+                    line-height: 1.5rem;
+                    font-size: 1.5rem;
 
-
-                    .text {}
+                    .text {
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
 
                 }
             }

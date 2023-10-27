@@ -115,3 +115,39 @@
         }
     }
 }
+
+@media screen and (max-width: 400px) {
+    .nav {
+
+
+        .logo {
+
+
+            img {
+                height: 50%;
+            }
+        }
+
+        .open {
+        }
+
+        .nav-items {
+            display: none;
+
+
+            .active {}
+
+            .item {}
+
+            .item:hover {}
+        }
+
+        .open-mobile {
+
+            i {
+            }
+        }
+    }
+
+}
+
