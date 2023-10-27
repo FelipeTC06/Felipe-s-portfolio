@@ -6,13 +6,14 @@ import { HeadlineComponent } from "../headline/headline.component";
 import { AboutMeComponent } from "../about-me/about-me.component";
 import { SkillsComponent } from "../skills/skills.component";
 import { ResumeComponent } from "../resume/resume.component";
+import { ProjectsComponent } from "../projects/projects.component";
 
 @Component({
     selector: 'app-layout',
     standalone: true,
     templateUrl: './layout.component.html',
     styleUrls: ['./layout.component.scss'],
-    imports: [CommonModule, FooterComponent, NavegationComponent, HeadlineComponent, AboutMeComponent, SkillsComponent, ResumeComponent]
+    imports: [CommonModule, FooterComponent, NavegationComponent, HeadlineComponent, AboutMeComponent, SkillsComponent, ResumeComponent, ProjectsComponent]
 })
 export class LayoutComponent {
 

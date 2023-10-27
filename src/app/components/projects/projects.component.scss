@@ -1,0 +1,99 @@
+.projects-all {
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    .title {
+        font-family: 'Josefin Sans', sans-serif;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-decoration-skip: none;
+        text-underline-offset: 4px;
+    }
+
+    .project-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        .link-a {
+            text-decoration: none;
+
+            .card-project {
+                background-color: #14191c;
+                padding: 1.5rem;
+                box-shadow: -1px -1px 9px -1px rgba(255, 255, 255, 0.75);
+                -webkit-box-shadow: -1px -1px 9px -1px rgba(255, 255, 255, 0.75);
+                -moz-box-shadow: -1px -1px 9px -1px rgba(255, 255, 255, 0.75);
+                border-radius: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 13rem;
+                height: 13rem;
+                cursor: pointer;
+                justify-content: center;
+
+                .icon-align {
+                    width: 100%;
+                    display: flex;
+                    align-items: flex-start;
+                }
+
+                .logo-image {
+                    width: 7rem;
+                    height: 7rem;
+                    border-radius: 1rem;
+                }
+
+                .name {
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-weight: bold;
+                    color: #daa520;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .projects-all {
+        padding: 5rem 0rem;
+
+        .title {}
+
+        .project-cards {
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            width: 100%;
+            padding: 1rem;
+            overflow-x: auto;
+
+            .link-a {
+
+
+                .card-project {
+                    width: 10rem;
+                    height: 10rem;
+
+
+                    .icon-align {}
+
+                    .logo-image {
+                        width: 5rem;
+                        height: 5rem;
+                    }
+
+                    .name {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+}
