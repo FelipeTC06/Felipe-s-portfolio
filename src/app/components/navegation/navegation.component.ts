@@ -17,11 +17,24 @@ export class NavegationComponent {
 
 
   public menuItems = [
-    { label: 'Home', active: true },
-    { label: 'About Me', active: false },
-    { label: 'Resume', active: false },
-    { label: 'Skills', active: false },
-    { label: 'Projects', active: false },
+    { label: '', active: true },
+    { label: '', active: false },
+    { label: '', active: false },
+    { label: '', active: false },
+    { label: '', active: false },
+    { label: '', active: false },
+    { label: '', active: false },
+    { label: '', active: false },
+    { label: '', active: false },
+    { label: '', active: false },
+    { label: '', active: false },
+    { label: '', active: false },
+    { label: '', active: false },
+    // { label: 'Home', active: true },
+    // { label: 'About Me', active: false },
+    // { label: 'Resume', active: false },
+    // { label: 'Skills', active: false },
+    // { label: 'Projects', active: false },
   ];
 
   constructor(private sanitizer: DomSanitizer) { }
