@@ -12,9 +12,10 @@ import { Popover } from 'bootstrap'
 })
 export class AboutMeComponent {
   public myImage!: SafeResourceUrl;
+  public goWhatsapp: string = 'https://wa.me/5521996957671';
   public goLinkedin: string = 'https://www.linkedin.com/in/felipe-torres-cresto/';
   public goGitHub: string = 'https://github.com/FelipeTC06';
-  public downLoadCv: string = './assets/curriculo/CV Felipe Torres En.pdf';
+  public downLoadCv: string = './assets/curriculo/CV Felipe Torres 2024.pdf';
   public readMore: boolean = false;
 
   constructor(private sanitizer: DomSanitizer, private renderer: Renderer2) { }

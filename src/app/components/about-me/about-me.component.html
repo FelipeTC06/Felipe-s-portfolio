@@ -6,17 +6,12 @@
         <h2 class="title">About Me</h2>
         <div class="text-more">
             <div class="text" [ngClass]="{ 'read-more': readMore }">
-                My name is Felipe Torres Cresto. Since I was young, my fascination with technology has fueled my
-                curiosity
-                and relentless research into how things work. I am passionate about innovation and challenges, always in
-                search of creative solutions. Additionally, I have a strong connection to the world of sports, having
-                practiced various disciplines over the years, with a particular love for surfing. This combination of
-                technological curiosity and a passion for sports inspires me to approach programming in a dynamic and
-                creative way, always striving to overcome obstacles and create innovative solutions.
+                My name is Felipe Torres Cresto. Full Stack Developer with solid expertise in Angular and Node.js, transforming ideas into digital solutions. I face complex challenges as opportunities for growth and embrace them as part of my professional development.
             </div>
             <span *ngIf="!readMore" class="continue" (click)="goReadMore()">Read More</span>
         </div>
         <div class="contact">
+            <a [href]="goWhatsapp" target="_blank"><i class="bi bi-whatsapp"></i></a>
             <a [href]="goLinkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
             <a [href]="goGitHub" target="_blank"><i class="bi bi-github"></i></a>
             <button type="button" class="mail" data-bs-container="body" data-bs-toggle="popover"

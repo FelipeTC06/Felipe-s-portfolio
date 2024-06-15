@@ -28,8 +28,8 @@ export class SkillsComponent {
   ]
 
   public languages = [
-    { name: 'PORTUGUESE', icon: '' },
-    { name: 'ENGLISH', icon: '' },
-    { name: 'FRENCH', icon: '' },
+    { name: 'PORTUGUESE', level: 'NATIVE', icon: '' },
+    { name: 'ENGLISH', level: 'B2', icon: '' },
+    { name: 'FRENCH', level: 'B2', icon: '' },
   ];
 }
